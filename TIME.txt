@@ -1,0 +1,17 @@
+input_width, # 우리가 가지는 train data 의 width
+label_width, # 예측하고자 하는 기간의 width
+shift,       # train data 와 우리의 예측 기간(처음 시작점) 이 얼마나 떨어져있는지
+label_columns # labelcolumns 는 우리가 예측하고자 하는 column들이다.
+
+total_window_size # 총 total window 사이즈
+input_slice : [0 ~ indput_width-1] 의 리스트를 형성
+input_indices : input width의 길이만큼 index 를 지정해주고자 한다
+
+# 즉 일별데이터에서 train 은 1~15일 / 예측은 20일을 하고싶다면
+    # input_width = 15
+    # input_indices = [0,1,2,.... 14]
+label_start : 예측하기 시작하는(즉 label_start) 지점에 대한 인덱스를 형성하고 싶다!
+labels_slice : [input_sidth ~ totalwindow size -1 ] 의 리스트 형성
+label_indices : 예측에 사용되는 인덱스를 얻으려 한다
+    # 즉 일별데이터에서 train 은 1~15일 / 예측은 20일을 하고싶다면
+    # label_indices = [19] 가 나온다. (1일 예측이므로)
