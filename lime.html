@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divMUQ7SVM17HIWZIV"></div>
+        <div class="lime top_div" id="top_divPJ1COCK07YBNV07"></div>
         
         <script>
-        var top_div = d3.select('#top_divMUQ7SVM17HIWZIV').classed('lime top_div', true);
+        var top_div = d3.select('#top_divPJ1COCK07YBNV07').classed('lime top_div', true);
         
         
                     var pp_div = top_div.append('div')
                                         .classed('lime predicted_value', true);
                     var pp_svg = pp_div.append('svg').style('width', '100%');
-                    var pp = new lime.PredictedValue(pp_svg, 19.95209999999994, 7.9547000000000105, 46.41419999999996);
+                    var pp = new lime.PredictedValue(pp_svg, 22.784290313720703, 6.226071357727051, 36.1496696472168);
                     
         var exp_div;
             var exp = new lime.Explanation(["negative", "positive"]);
         
             exp_div = top_div.append('div').classed('lime explanation', true);
-            exp.show([["5.88 < RM <= 6.20", -2.921658574458346], ["11.57 < LSTAT <= 17.14", -2.771496685811312], ["79.45 < AGE <= 94.53", -0.6427202743363672], ["0.25 < CRIM <= 3.36", 0.31322772134714333], ["16.90 < PTRATIO <= 18.90", -0.240328314038617]], 1, exp_div);
+            exp.show([["B", 5.377287757389137], ["TAX", -1.277315325348642], ["ZN", 0.9696979243148174], ["CRIM", -0.36290889532479975], ["LSTAT", -0.23831021094272473], ["AGE", -0.22684593162387223], ["RAD", -0.20228315755379211], ["INDUS", -0.13273503433003728], ["DIS", 0.11749458381648721], ["PTRATIO", 0.031684498897378385], ["RM", 0.014005650465496405], ["CHAS", 0.013672114192259839], ["NOX", -0.0016576027369745248]], 1, exp_div);
             
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["RM", "6.02", -2.921658574458346], ["LSTAT", "11.72", -2.771496685811312], ["AGE", "90.40", -0.6427202743363672], ["CRIM", "0.26", 0.31322772134714333], ["PTRATIO", "18.40", -0.240328314038617]], 1, raw_div);
+            exp.show_raw_tabular([["B", "396.90", 5.377287757389137], ["TAX", "233.00", -1.277315325348642], ["ZN", "0.00", 0.9696979243148174], ["CRIM", "0.17", -0.36290889532479975], ["LSTAT", "10.21", -0.23831021094272473], ["AGE", "33.80", -0.22684593162387223], ["RAD", "3.00", -0.20228315755379211], ["INDUS", "6.91", -0.13273503433003728], ["DIS", "5.10", 0.11749458381648721], ["PTRATIO", "17.90", 0.031684498897378385], ["RM", "5.68", 0.014005650465496405], ["CHAS", "0.00", 0.013672114192259839], ["NOX", "0.45", -0.0016576027369745248]], 1, raw_div);
         
         </script>
         </body></html>
